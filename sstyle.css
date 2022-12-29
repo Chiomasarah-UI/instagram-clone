@@ -1,0 +1,481 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.left{
+    width: 18%;
+}
+
+.left nav{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    margin-left: .8rem;
+    border-right: 1px solid;
+    border-color: rgb(230, 229, 229);
+}
+
+nav a{
+    margin: 2.5rem .6rem ;
+}
+
+.click{
+    display: flex;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border-radius: 3rem;
+    height: auto;
+    padding: .7rem .3rem;
+    align-content: center;
+    cursor: pointer;
+}
+
+.click:hover{
+    background-color: rgb(248, 248, 248);
+}
+
+#more{
+    margin-top: 2.5rem;
+}
+
+.click img{
+    width: 12%;
+    border-radius: 2rem;
+    margin-right: 1rem;
+    margin-left: .3rem;
+}
+
+.click svg{
+    width: 12%;
+    padding-top: .15rem;
+    margin-right: 1rem;
+}
+
+nav i{
+    width: 2rem;
+    font-size: 1.4rem;
+    font-weight: 100;
+    margin-right: .5rem;
+    margin-left: .3rem;
+}
+
+.middle{
+    width: 36%;
+    margin-left: 8rem;
+    margin-right: .5rem;
+}
+
+.story{
+    display: flex;
+    width: 100%;
+    margin-top: 2.5rem;
+}
+
+.storydiv img{
+    border-radius: 50%;
+    width: 100%;
+    border: 2.6px solid white;
+    margin-bottom: -0.2rem;
+    margin-left: 0.001rem;
+}
+
+.storydiv p{
+    white-space: nowrap; 
+    width: 63px; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    margin-left: .7rem;
+    font-size: .79rem;
+    color: rgb(70, 70, 70);
+    font-weight: 400;
+}
+
+.storydiv{
+    width: 17%;
+    text-align: center;
+}
+
+.next{
+    background-color: white;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    position: absolute;
+    right: 37.5%;
+    top: 12.5%;
+    padding-bottom: .3rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.next i{
+    font-size: .8rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+#No{
+    margin-right: 0;
+}
+
+.right{
+    width: 24%;
+    margin-left: 1.2rem;
+}
+
+.gradient{
+    width: 80%;
+    background-image: linear-gradient(to bottom left,purple, red, yellow);
+    border-radius: 0%;
+    padding: 0.1rem;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 0.5rem;
+}
+
+.posts{
+    margin-top: 2.4rem;
+    width: 100%;
+    border-bottom: 1px solid rgb(160, 160, 160);
+}
+
+.NameDate{
+    display: flex;
+    width: 100%;
+    margin-bottom: .5rem;
+}
+
+.write{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: -.25rem;
+}
+
+.ppics{
+    border-radius: 50%;
+    width: 7%;
+    height: 7%;
+    margin-right: .6rem;
+}
+
+.tip{
+    display: flex;
+}
+
+.tip span{
+    margin-top: -.2rem;
+    font-size: 1rem;
+    font-weight: 900;
+    color: rgb(128, 127, 127);
+    margin-left: .5rem;
+}
+
+.leo{
+    font-weight: 600;
+    font-size: .9rem;
+}
+
+.location{
+    font-size: .75rem;
+    color: rgb(100, 100, 100);
+    font-weight: 500;
+}
+
+.hours{
+    margin-left: .3rem;
+    font-size: .9rem;
+    color: rgb(177, 177, 177);
+}
+
+.imgpost{
+    width: 100%;
+}
+
+.imgpost img{
+    width: 100%;
+    border-radius: .2rem;
+    border: 1px solid;
+    border-color: rgb(230, 230, 230);
+}
+
+.likes{
+    display: flex;
+    justify-content: space-between;
+    margin-top: .5rem;
+}
+
+._ab6{
+    margin-left: .7rem;
+}
+
+.likedby{
+    display: flex;
+    margin-top: .6rem;
+}
+
+.likedby img{
+    border-radius: 50%;
+    width: 4%;
+    border: 2px solid white;
+}
+
+.front{
+    z-index: 1;
+}
+
+.back{
+    margin-left: -.5rem;
+    z-index: 0;
+}
+
+.likedby p{
+    font-size: .9rem;
+    margin-left: .3rem;
+}
+
+.likedby span{
+    font-weight: 600;
+}
+
+.caption{
+    font-size: .9rem;
+    margin-top: .5rem;
+    color: rgb(58, 58, 58);
+}
+
+.caption span{
+    font-size: .9rem;
+    font-weight: 600;
+    color: black;
+}
+
+.viewco,.add{
+    font-size: .9rem;
+    margin-top: .5rem;
+    color: rgb(129, 129, 129);
+    cursor: pointer;
+}
+
+.dot{
+    margin-left: 17rem;
+}
+
+.tot{
+    margin-left: 19rem;
+    margin-top: .4rem;
+}
+
+.addwrap{
+    display: flex;
+    justify-content: space-between;
+}
+
+.addwrap  ._ab6-{
+    margin-top: 0.7rem;
+    margin-bottom: 1.7rem;
+}
+
+.secwrite{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: .3rem;
+}
+
+.sot{
+    margin-left: 14.5rem;
+    margin-top: .3rem;
+}
+
+br{
+    margin-top: .5rem;
+}
+
+.dient{
+    width: 2.5rem;
+    height: 2.5rem;
+    background-image: linear-gradient(to bottom left,purple, red, yellow);
+    padding-left: 0.1rem;
+    border-radius: 50%;
+    padding-right: 0.3rem;
+    margin-right: .5rem;
+}
+
+.berry{
+    border-radius: 50%;
+    width: 105%;
+    margin-left: 0.05rem;
+    margin-top: 0.14rem;
+    border: 2px solid white;
+}
+
+.berrynext{
+    background-color: white;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    position: absolute;
+    right: 37.5%;
+    top: 314%;
+    padding-bottom: .3rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.berrynext i{
+    font-size: .8rem;
+    font-weight: 800;
+    text-align: center;
+    color: rgb(173, 173, 173);
+}
+
+.rudComment{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rudComment ._ab6-{
+    margin-top: .8rem;
+}
+
+.yot{
+    margin-left: 17rem;
+    margin-top: .3rem;
+}
+
+.me{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.5rem;
+}
+
+.me img{
+    width: 22%;
+    border-radius: 50%;
+}
+
+.me p{
+    font-size: .9rem;
+    margin-left: 1rem;
+}
+
+.meText{
+    margin-top: .5rem;
+}
+
+.me a{
+    text-decoration: none;
+    margin-top: 1.5rem;
+    font-size: .75rem;
+    color: rgb(0, 183, 255);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.bold{
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.faint{
+    color: rgb(155, 155, 155);
+}
+
+.inside{
+    display: flex;
+}
+
+.suggest{
+    display: flex;
+    justify-content: space-between;
+    font-size: .9rem;
+    margin-top: 1rem;
+}
+
+.fainty{
+    font-weight: 700;
+    color: rgb(155, 155, 155);
+}
+
+.bolder{
+    font-size: .75rem;
+    font-weight: 500;
+}
+
+.follow{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.follow a{
+    text-decoration: none;
+    font-size: .75rem;
+    color: rgb(0, 183, 255);
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: .8rem;
+}
+
+.flow{
+    display: flex;
+}
+
+.flow img{
+    width: 12%;
+    height: 96%;
+    border-radius: 50%;
+    margin-right: 1rem;
+    border: 1px solid;
+    border-color: rgb(214, 213, 213);
+}
+
+.user{
+    font-size: .9em;
+    font-weight: 600;
+}
+
+.whofollows{
+    color: rgb(155, 155, 155);
+    font-size: .75rem;
+}
+
+.foot ul{
+    display: flex;
+}
+
+.foot li{
+    font-size: .75rem;
+    list-style: none;
+    color: rgb(196, 196, 196);
+    cursor: pointer;
+}
+
+.foot li:hover{
+    text-decoration: underline;
+}
+
+.list::after{
+    content: '.';
+    font-size: 1rem;
+    color: rgb(155, 155, 155);
+    margin: 0 0.2em 0 0.2em;
+}
+
+.last{
+    margin-top: 1rem;
+    color: rgb(189, 189, 189);
+    font-size: .8rem;
+}
